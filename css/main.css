@@ -557,13 +557,13 @@ Testimonial area
 =================================================*/
 .testiomnial_area{
 	position:relative;
-	background-image: url("https://github.com/sohelarman1837754/testweb/img/Client.jpg");
+	background-image: url("../img/Client.jpg");
 	background-repeat:no-repeat;
 	background-position: top center;
 	background-attachment:fixed;
 	background-size:cover;
 	padding-top: 5%;
-padding-bottom: 7%;
+        padding-bottom: 7%;	
 }
 .testiomnial_area h1{
 	 margin-top:0px;
