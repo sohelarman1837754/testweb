@@ -1,0 +1,93 @@
+
+.loader-overlay {
+    background-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    width: 100%;
+    transition: opacity .5s ease-in-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.preloader {
+    background: #30ddb6 none repeat scroll 0 0;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 9999999;
+}
+.preloader-inner-area {
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.l-preloader {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.c-preloader {
+    width: 100px;
+    height: 100px;
+    position: relative;
+}
+.c-preloader::before {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #008cb5;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    animation-name: preloading;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.c-preloader::after {
+    content: '';
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #008cb5;
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    animation-name: preloading;
+    animation-duration: 1.2s;
+    animation-delay: -0.6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes preloading {
+    0% {
+        opacity: 1;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1);
+    }
+}
+.navbar-nav.navbar-nav-right {
+    float: right;
+    margin: 0;
+}
+.navbar .navbar-other.navbar-other-right {
+    padding-left: 0!important;
+}
+
+.single_blog_item_div h2 {
+    margin-bottom: 30px;
+}
