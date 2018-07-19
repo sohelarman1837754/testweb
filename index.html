@@ -333,25 +333,43 @@
  
  
  <section class="contact_area">
+  <div class="content_main">
+ <div class="text_area_overlay"></div>
     <h1>Contact Me</h1>
 	<div class="container">
 	      <div class="contact_form">
 		      <form action="">
 			      <div class="row">
 			      	<div class="col-xl-6 col-lg-6 col-md-6">
-					   <input class="input_name" name="name" placeholder="Name*" required="required" data-error="name is required" type="text">
+					   <input id="input_name" name="name" placeholder="Name*"  data-error="name is required" type="text">
 					</div>
 			      	<div class="col-xl-6 col-lg-6 col-md-6">
-					    <input class="input_email" name="email" placeholder="Email*" required="required" data-error="name is required" type="email">
+					    <input id="input_email" name="email" placeholder="Email*"  data-error="name is required" type="email">
 					</div>
 			      </div><!--row-->
-				    <input class="input_subject" name="subject" placeholder="Jubject*" required type="text">
-	  
-					 
+				    <div class="row">
+				    	<div class="col-md-12">
+						    <input id="input_subject" name="subject" placeholder="Jubject*"  type="text">
+						</div>
+				    </div>
+				   <div class="row">
+				    	<div class="col-md-12">
+						    <textarea name="area" id="text_area" cols="30" rows="10" placeholder="Your Message"></textarea>
+						</div>
+				    </div>	
+
+			       <button class="Button text-center" type="submit">Submit Your Message</button>			  
 			  </form>
 		  </div>
 	</div>
- </section>
+</div>
+ </section><!--end contact_area-->
+ 
+ 
+ <footer class="footer_area">
+     <p>&#9400; Sohel Arman</p>
+ 
+ </footer>
  
  
  
@@ -362,7 +380,8 @@
  
 <div class="space"></div>
 		
-		
+	 
+ 
 		
 		
 		
@@ -416,6 +435,7 @@
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/isotope.pkgd.min.js"></script>
         <script src="js/isotope.function.js"></script>
+        <script src="js/toucheffects.js"></script>
 		<script src="jquery.main.js"></script> 
 		<script src="js/jquery.lineProgressbar.js"></script>
 		
